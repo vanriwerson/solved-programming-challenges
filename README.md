@@ -13,7 +13,7 @@
 Utilizei a tecnologia com a qual tenho mais familiaridade atualmente: [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## Dev
-##### _Bruno Riwerson Silva_
+#### _Bruno Riwerson Silva_
 Futuro desenvolvedor fullstack e analista de sistemas ^^
 
 Siga-me no [Linkedin](https://www.linkedin.com/in/bruno-riwerson/)
