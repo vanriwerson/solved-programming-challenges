@@ -8,7 +8,7 @@ const isPrimeNumber = require('../isPrimeNumber');
 const isPalindrome = require('../isPalindrome');
 
 const findFirstNDigitsPrimePalindromeNumber = (searchSrc, strLen) => {
-  for (let finalCharPosition = strLen; finalCharPosition < searchSrc.length; finalCharPosition += 1) {
+  for (let finalCharPosition = strLen; finalCharPosition <= searchSrc.length; finalCharPosition += 1) {
     const initialCharPosition = finalCharPosition - strLen;
     const substr = searchSrc.toString().substring(initialCharPosition, finalCharPosition);
     const num = Number(substr);
