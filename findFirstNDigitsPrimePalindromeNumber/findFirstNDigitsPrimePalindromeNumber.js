@@ -7,21 +7,21 @@ const isPrimeNumber = require('../isPrimeNumber');
 
 const isPalindrome = require('../isPalindrome');
 
-const findFirstNDigitsPrimePalindromeNumber = (searchSrc, len) => {
-  for (let strLen = len; strLen < searchSrc.length; strLen += 1) {
-    const initialChar = strLen - len;
-    const substr = searchSrc.toString().substring(initialChar, strLen);
+const findFirstNDigitsPrimePalindromeNumber = (searchSrc, strLen) => {
+  for (let finalCharPosition = strLen; finalCharPosition < searchSrc.length; finalCharPosition += 1) {
+    const initialCharPosition = finalCharPosition - strLen;
+    const substr = searchSrc.toString().substring(initialCharPosition, finalCharPosition);
     const num = Number(substr);
 
     const testPrimeNumber = isPrimeNumber(num);
     const testPalindrome = isPalindrome(substr);
 
     // Este log é opcional. This log is optional.
-    console.log(`charAt: ${initialChar}, testStr: ${substr}, prime: ${testPrimeNumber}, palindrome: ${testPalindrome}`);
+    console.log(`charAt: ${initialCharPosition}, testStr: ${substr}, prime: ${testPrimeNumber}, palindrome: ${testPalindrome}`);
 
     if (testPrimeNumber && testPalindrome) {
-      return `O número procurado é: ${substr}, iniciando na posição ${initialChar}`;
-      // return `The seeked number is: ${substr}, starting at position ${initialChar}`;
+      return `O número procurado é: ${substr}, iniciando na posição ${initialCharPosition}`;
+      // return `The seeked number is: ${substr}, starting at position ${initialCharPosition}`;
     }
   }
 
@@ -29,6 +29,7 @@ const findFirstNDigitsPrimePalindromeNumber = (searchSrc, len) => {
   // return `Not found in ${searchSrc.length} characters.`;
 }
 
-console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 3)); // returns 383
-console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 5)); // returns 38183
+// console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 3)); // returns 383
+// console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 5)); // returns 38183
 // console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 9)); // returns 318272813 takes a long time XD
+console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 21)); // returns 
