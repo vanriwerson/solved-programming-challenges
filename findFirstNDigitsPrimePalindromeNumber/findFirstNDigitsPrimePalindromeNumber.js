@@ -1,7 +1,8 @@
 // Qual o primeiro número Primo Palíndromo de N dígitos
 // encontrado na expansão decimal do número Pi (3,1415...)?
 
-const piDecimalExpansion = require('./piDecimalExpansion');
+const oneMillionDigitsPI = require('./oneMillionDigitsPI');
+const hundredBillionDigitsPI = require('./hundredBillionDigitsPI');
 
 const isPrimeNumber = require('../isPrimeNumber');
 
@@ -29,7 +30,7 @@ const findFirstNDigitsPrimePalindromeNumber = (searchSrc, strLen) => {
   // return `Not found in ${searchSrc.length} characters.`;
 }
 
-// console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 3)); // returns 383
+console.log(findFirstNDigitsPrimePalindromeNumber(oneMillionDigitsPI, 3)); // returns 383
 // console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 5)); // returns 38183
 // console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 9)); // returns 318272813 takes a long time XD
-console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 21)); // returns 
+console.log(findFirstNDigitsPrimePalindromeNumber(hundredBillionDigitsPI, 21)); // returns 
