@@ -2,7 +2,7 @@
 // encontrado na expansão decimal do número Pi (3,1415...)?
 
 const oneMillionDigitsPI = require('./oneMillionDigitsPI');
-const hundredBillionDigitsPI = require('./hundredBillionDigitsPI');
+// const hundredBillionDigitsPI = require('./hundredBillionDigitsPI');
 
 const isPrimeNumber = require('../isPrimeNumber');
 
@@ -33,4 +33,4 @@ const findFirstNDigitsPrimePalindromeNumber = (searchSrc, strLen) => {
 console.log(findFirstNDigitsPrimePalindromeNumber(oneMillionDigitsPI, 3)); // returns 383
 // console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 5)); // returns 38183
 // console.log(findFirstNDigitsPrimePalindromeNumber(piDecimalExpansion, 9)); // returns 318272813 takes a long time XD
-console.log(findFirstNDigitsPrimePalindromeNumber(hundredBillionDigitsPI, 21)); // returns 
+// console.log(findFirstNDigitsPrimePalindromeNumber(hundredBillionDigitsPI, 21)); // returns 
